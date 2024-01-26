@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P id="demo"></P>
+    <script>
+        let json3 ={
+            "cars":[
+                {
+                    "name":"tesla",
+                    "color":"red",
+                    "engine":"a-4",
+                    "price":"3000m",
+                },
+                {
+                    "name":"tesla",
+                    "color":"red",
+                    "engine":"a-4",
+                    "price":"3000m",
+                },
+                {
+                    "name":"tesla",
+                    "color":"red",
+                    "engine":"a-4",
+                    "price":"3000m",
+                },
+                {
+                    "name":"tesla",
+                    "color":"red",
+                    "engine":"a-4",
+                    "price":"3000m",
+                },
+            ]
+        };
+        let d =JSON.stringify(json3);
+
+        let cars = {
+            "name":"honda",
+            "price":"200m"
+        }
+        document.getElementById("demo").innerHTML =cars.name +"<br>"+ cars.price;
+    </script>
+</body>
+</html>

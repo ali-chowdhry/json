@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="abc()">save data</button>
+
+    <script>
+        function abc(){
+        let a = {
+            "name":"ali",
+            "age":14,
+            "school":"abc school"
+        }
+
+        let d = JSON.stringify(a);
+        localStorage.setItem("ali data",d);
+
+        alert("your data is save")
+    }
+    </script>
+</body>
+</html>
